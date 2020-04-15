@@ -22,6 +22,9 @@ Demo：[clipboard.top](https://clipboard.top/)
 1. 把 `index.php` 放到网站目录下
 2. 创建 `upload` 文件夹并给予 php 进程写权限（例如 `chown -R www:www upload/`）
 3. 命令行运行 `websocket.php`（确保你已经安装 Swoole 环境）
+4. 命令行运行 `cleanup.php`（用于定时清理过期图片文件）
+
+> 建议使用 screen 来维护 php 进程，避免 SSH 连接断开后进程终止
 
 ## 关于资源文件
 网页调用了一些来自 cdn.zerodream.net 的文件，这个是我本人自用的 CDN 服务器，宽带流量有限，而且不太稳定，日常爆炸，部署的话建议自行更换为大厂 CDN。
